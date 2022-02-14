@@ -6,7 +6,7 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 12:12:10 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/14 10:01:04 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/14 14:16:36 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_lstiter(t_list *lst, void (*f)(int))
 	while (lst)
 	{
 		(*f)(lst->content);
-		ft_putstr_fd(" | ", 1);
+		ft_putstr_fd(" ", 1);
 		lst = lst->next;
 	}
 }

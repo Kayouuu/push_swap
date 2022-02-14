@@ -6,7 +6,7 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 08:44:26 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/14 09:25:26 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/14 14:32:18 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,20 @@ t_list	*ft_lstnew(int content)
 	if (tmp)
 	{
 		tmp->content = content;
+		tmp->next = NULL;
+	}
+	return (tmp);
+}
+
+t_list	*ft_lstnew_index(int content, int index)
+{
+	t_list	*tmp;
+
+	tmp = malloc(sizeof(t_list));
+	if (tmp)
+	{
+		tmp->content = content;
+		tmp->index = index;
 		tmp->next = NULL;
 	}
 	return (tmp);

@@ -6,7 +6,7 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 16:26:50 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/03 12:52:11 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/14 14:34:42 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ void	ra(t_list **stacka)
 {
 	void	*tmp;
 
-	ft_lstadd_back(stacka, ft_lstnew((*stacka)->content));
+	ft_lstadd_back(stacka, ft_lstnew_index((*stacka)->content,
+			(*stacka)->index));
 	tmp = *stacka;
 	*stacka = (*stacka)->next;
 	free(tmp);
@@ -27,7 +28,8 @@ void	rb(t_list **stackb)
 {
 	void	*tmp;
 
-	ft_lstadd_back(stackb, ft_lstnew((*stackb)->content));
+	ft_lstadd_back(stackb, ft_lstnew_index((*stackb)->content,
+			(*stackb)->index));
 	tmp = *stackb;
 	*stackb = (*stackb)->next;
 	free(tmp);

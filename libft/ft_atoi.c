@@ -6,13 +6,14 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 14:11:07 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/12 18:39:36 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/14 10:11:11 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* Convert ASCII string to an integer, return 0 if it's not a digital number */
 
 #include "libft.h"
+
 long	ft_atoi(const char *str)
 {
 	int		n;

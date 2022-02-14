@@ -6,7 +6,7 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 12:58:43 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/12 15:44:51 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/14 10:16:51 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static void	delete(t_list **init, void (*del)(void *))
 	}
 }
 
-t_list	*ft_lstmap(t_list *lst, int(*f)(int), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, int (*f)(int), void (*del)(void *))
 {
 	t_list	*new_lst;
 	t_list	*tmp;

@@ -6,7 +6,7 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 15:51:50 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/14 09:59:52 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/14 15:34:29 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	which_case(t_list **stack_a, t_list **stack_b)
 	else if (size == 2)
 		sa(stack_a);
 	else
-		ft_putendl_fd("Radix", 2);
+		radix(stack_a, stack_b);
 }
 
 void	case_three(t_list **stack_a)

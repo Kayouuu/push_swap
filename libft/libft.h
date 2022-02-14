@@ -6,7 +6,7 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 16:13:55 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/12 18:44:26 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/14 14:32:32 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ void			ft_lstclear(t_list **lst);
 void			ft_lstiter(t_list *lst, void (*f)(int));
 int				ft_lstsize(t_list *lst);
 t_list			*ft_lstnew(int content);
+t_list			*ft_lstnew_index(int content, int index);
 t_list			*ft_lstlast(t_list *lst);
 t_list			*ft_lstmap(t_list *lst, int (*f)(int),
 					void (*del)(void *));
