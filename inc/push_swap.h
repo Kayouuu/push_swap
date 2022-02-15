@@ -6,7 +6,7 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 15:11:07 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/14 17:07:12 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/15 11:53:33 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,15 @@ void	radix(t_list **stack_a, t_list **stack_b);
 void	clearandquit(t_list **stacka);
 void	indexage(t_list **stack_a);
 int		ft_is_sorted(t_list *stack);
+
+/*	ERROR.C	*/
+
+void	free_tab(char **tab);
+int		str_is_digit(char *str);
+int		has_duplicate(t_list *stack_a);
+
+/*	PARSING.C	*/
+
+t_list	*parsing(int argc, char *argv[]);
 
 #endif

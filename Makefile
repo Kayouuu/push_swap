@@ -6,12 +6,13 @@
 #    By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/26 15:10:54 by psaulnie          #+#    #+#              #
-#    Updated: 2022/02/15 09:33:10 by psaulnie         ###   ########.fr        #
+#    Updated: 2022/02/15 13:37:58 by psaulnie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = srcs/main.c srcs/push.c srcs/swap.c srcs/rotate.c \
-srcs/reverse_rotate.c srcs/case.c srcs/utils.c srcs/radix.c
+srcs/reverse_rotate.c srcs/case.c srcs/utils.c \
+srcs/radix.c srcs/error.c srcs/parsing.c
 OBJS = ${SRCS:.c=.o}
 LIBFT = libft
 LIBFT_LIB = libft/libft.a

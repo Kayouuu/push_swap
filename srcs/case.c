@@ -6,7 +6,7 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 15:51:50 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/15 09:24:48 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/15 14:05:17 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ void	case_three(t_list **stack_a)
 void	case_five_rotate(t_list **stack_a, t_list *start, int n)
 {
 	int	i;
+	int	pos;
 	int	min;
 
 	i = 0;
@@ -65,13 +66,16 @@ void	case_five_rotate(t_list **stack_a, t_list *start, int n)
 	while (i++ < n)
 	{
 		if ((*stack_a)->content < min)
+		{
 			min = (*stack_a)->content;
+			pos = i;
+		}
 		*stack_a = (*stack_a)->next;
 	}
 	*stack_a = start;
 	while ((*stack_a)->content != min)
 	{
-		if (i < 2)
+		if (pos <= 2)
 			ra(stack_a);
 		else
 			rra(stack_a);
