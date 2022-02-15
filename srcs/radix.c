@@ -6,12 +6,11 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 10:17:48 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/14 15:29:17 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/15 09:44:37 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
-#include <stdio.h>
 
 int	is_bit_one(int current_number, int i)
 {

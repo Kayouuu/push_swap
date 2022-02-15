@@ -6,12 +6,11 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 15:15:35 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/14 17:07:45 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/15 09:44:34 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
-#include <stdio.h>
 
 void	quit(void)
 {
@@ -71,7 +70,7 @@ t_list	*parsing(int argc, char *argv[])
 	int		i;
 	long	nbr;
 
-	i = 2;
+	i = 1;
 	if (argv[1][0] == '\0')
 		exit(0);
 	if (!str_is_digit(argv[1]) || ft_strlen(argv[1]) > 11)
@@ -107,14 +106,12 @@ int	main(int argc, char *argv[])
 	if (ft_is_sorted(stacka))
 	{
 		ft_lstclear(&stacka);
-		free(stacka);
 		exit(0);
 	}
 	indexage(&stacka);
 	if (has_duplicate(stacka) == 1)
 	{
 		ft_lstclear(&stacka);
-		free(stacka);
 		quit();
 	}
 	which_case(&stacka, &stackb);

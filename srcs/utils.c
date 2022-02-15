@@ -6,7 +6,7 @@
 /*   By: psaulnie <psaulnie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 09:28:58 by psaulnie          #+#    #+#             */
-/*   Updated: 2022/02/14 17:06:26 by psaulnie         ###   ########.fr       */
+/*   Updated: 2022/02/15 09:44:49 by psaulnie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void	clearandquit(t_list **stacka)
 {
 	ft_lstclear(stacka);
-	free(stacka);
 	quit();
 }
 
@@ -26,6 +25,13 @@ int	ft_is_sorted(t_list *stack)
 
 	last_nbr = stack->content;
 	is_sorted = 1;
+	if (ft_lstsize(stack) == 1)
+	{
+		if (stack->content > stack->next->content)
+			return (0);
+		else
+			return (1);
+	}
 	stack = stack->next;
 	while (stack != NULL)
 	{
